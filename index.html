@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar starts here -->
+    <nav>
+        <div class="container">
+            <!--Logo-->
+            <a id="nav-logo" href="#">Fabulous</a>
+            <!--/Logo-->
+
+            <ul class="nav-links">
+
+                <!--Nav Bar links-->
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <!--Cart Button and List-->
+                <li>
+                <button id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-counter">0</span>)</button>
+                <div id="cart-container">
+                    <h3>Your Cart</h3>    
+                    <div id="cart-table">
+
+
+
+                        <div class="cart-row">
+                            <img src="img/products/OrangeBorba1.jpg">
+                            <div>
+                                <h4>Orange Borba Dress</h4>
+                                <span>Size: 7</span>
+                            </div>
+                            <div class="cart-price">
+                                <span>£70</span>
+                            </div>
+                            <div class="cart-quantity">
+                                <button><i class="fas fa-angle-up"></i></button>
+                                <span>1</span>
+                                <button><i class="fas fa-angle-down"></i></button>
+                            </div>
+                            <div class="cart-trash">
+                                <button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="cart-row">
+                            <img src="img/products/OrangeBorba1.jpg">
+                            <div>
+                                <h4>Orange Borba Dress</h4>
+                                <span>Size: 7</span>
+                            </div>
+                            <div class="cart-price">
+                                <span>£70</span>
+                            </div>
+                            <div class="cart-quantity">
+                                <button><i class="fas fa-angle-up"></i></button>
+                                <span>1</span>
+                                <button><i class="fas fa-angle-down"></i></button>
+                            </div>
+                            <div class="cart-trash">
+                                <button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="cart-footer">
+                        <div id="cart-total">Total:&ensp;<span>£70</span></div>
+                        <div id="cart-footer-btns">
+                            <button id="cart-clear">Clear List</button>
+                            <button id="cart-checkout">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <!--/Cart Button and List-->
+
+                
+                <!--/Nav Bar links-->
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <!-- Showcase starts here -->
+    <div class="container">
+        <div id="showcase">
+            <h2>Dress to impress</h2>
+            <button>Shop the Trend</button>
+        </div>
+
+    <!-- Showcase ends here -->
+
+    <!-- Product grid starts here -->
+        <div id="product-grid">
+
+        </div>
+    </div>
+    <!-- Product grid ends here -->
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
