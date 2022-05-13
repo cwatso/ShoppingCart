@@ -17,7 +17,7 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["OrangeBorba1.jpg", "OrangeBorba2.jpg"],
-        imgAttr: "Photo by Jonathan Borba on Unsplash"
+        imgAttr: "Photos by Jonathan Borba on Unsplash"
     },
     {
         id: 1,
@@ -35,7 +35,7 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["WhiteJona1.jpg", "WhiteJona2.jpg"],
-        imgAttr: "Photo by Jonathan Borba on Unsplash"
+        imgAttr: "Photos by Jonathan Borba on Unsplash"
     },
     {
         id: 2,
@@ -53,7 +53,7 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["WhiteVara1.jpg", "WhiteVara2.jpg"],
-        imgAttr: "Photo by Ksenia Varapaeva on Unsplash"
+        imgAttr: "Photos by Ksenia Varapaeva on Unsplash"
     },
     {
         id: 3,
@@ -71,7 +71,7 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["RedKsenia1.jpg", "RedKsenia2.jpg"],
-        imgAttr: "Photo by Ksenia Varapaeva on Unsplash"
+        imgAttr: "Photos by Ksenia Varapaeva on Unsplash"
     },
     {
         id: 4,
@@ -89,7 +89,7 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["WhiteMarisa1.jpg", "WhiteMarisa2.jpg"],
-        imgAttr: "Photo by Marisa Harris on Unsplash"
+        imgAttr: "Photos by Marisa Harris on Unsplash"
     },
     {
         id: 5,
@@ -107,7 +107,7 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["SilverValerie1.jpg", "SilverValerie2.jpg"],
-        imgAttr: "Photo by Valerie Elash on Unsplash"
+        imgAttr: "Photos by Valerie Elash on Unsplash"
     },
     {
         id: 6,
@@ -125,7 +125,7 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["CyanElash1.jpg", "CyanElash2.jpg"],
-        imgAttr: "Photo by Valerie Elash on Unsplash"
+        imgAttr: "Photos by Valerie Elash on Unsplash"
     },
     {
         id: 7,
@@ -143,6 +143,6 @@ const products = [
         },
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         imgSrc: ["KhakiErie1.jpg", "KhakiErie2.jpg"],
-        imgAttr: "Photo by Valerie Elash on Unsplash"
+        imgAttr: "Photos by Valerie Elash on Unsplash"
     }
 ]

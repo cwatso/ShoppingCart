@@ -6,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(243, 243, 243);
 }
 
@@ -68,6 +68,7 @@ nav a {
   background: white;
   border: none;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #cart-container::before {
@@ -193,7 +194,7 @@ nav a {
   background: rgb(243, 243, 243);
 }
 
-#cart-total {
+#cart-total-row {
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -208,6 +209,7 @@ nav a {
 
 #cart-footer-btns button {
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
   color: white;
   padding: 10px 15px;
   min-width: 25%;
@@ -313,7 +315,6 @@ nav a {
 
 .card-img-top {
   width: 100%;
-  border: 3px solid rgb(224, 224, 224);
 }
 
 .card-body {
@@ -339,7 +340,7 @@ nav a {
   background: white;
   display: grid;
   width: 70%;
-  gap: 15px 15px;
+  gap: 15px 25px;
   padding: 25px 25px;
   margin: auto;
   grid-template-columns: 100px 320px 1fr;
@@ -367,6 +368,11 @@ nav a {
   margin-top: 10px;
 }
 
+#product-details span {
+  font-weight: bold;
+  letter-spacing: .05rem;
+}
+
 #product-sizes {
   display: flex;
   flex-wrap: wrap;
@@ -384,6 +390,8 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 2px;
 }
 
 #product-sizes .product-size-circle:disabled {
@@ -410,6 +418,11 @@ nav a {
 
 #add-to-cart-btn:active {
   background: rgb(0,80,0);
+}
+
+#product-attr {
+  font-size: 14px;
+  font-style: italic;
 }
 
 @media (max-width: 767px) {
