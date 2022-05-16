@@ -79,7 +79,7 @@ export function addItem(id) {
 // Clears cart
 export function clearCart(){
     if(confirm("Are you sure you want to clear the cart?") == true){
-        cart = [];
+        cart.splice(0, cart.length);
         displayCart();
     }
 }
