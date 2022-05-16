@@ -1,8 +1,6 @@
 // Import cart and utility codes
 import * as main from '../js/main.js';
 
-main.setupCart();
-
 // Get product Id from url
 const urlString = new URLSearchParams(window.location.search);
 const prodId = urlString.get('id');
@@ -26,6 +24,7 @@ const productPriceContainer = document.getElementById("product-price");
 const productDescContainer = document.getElementById("product-desc");
 const productSizesContainer = document.getElementById("product-sizes");
 const productImgAttrContainer = document.getElementById("product-attr");
+const addToCartBtn = document.getElementById("add-to-cart-btn");
 
 // Setup product image thumbnails. Sets first image to active on page load.
 function setupThumbnails() {
@@ -61,7 +60,7 @@ function generateSizes() {
 
         //Adds event listener for size selection
         sizeCircle.addEventListener("click", (evt) => {
-            selectedCircle = evt.target;
+            let selectedCircle = evt.target;
             let circleArray = document.querySelectorAll("button.product-size-circle");
             circleArray.forEach(button => {
                 button.dataset.active = "false";
@@ -85,6 +84,7 @@ function setupProductPage() {
     productImgAttrContainer.innerText = "* " + productAttr;
     setupThumbnails();
     generateSizes();
+    addToCartBtn.addEventListener("click", () => {addToCart();})
     main.setupCart();
 }
 
@@ -96,5 +96,6 @@ function addToCart() {
         main.addItem(id);
     }
 }
+
 
 setupProductPage();

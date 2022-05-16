@@ -114,9 +114,9 @@ export function displayCart(){
             let itemSize = getItemSize(item.id);
             let itemPrice = itemDetails.price;
 
-            let itemRow = `
-            
-            <div class="cart-row">
+            let itemRow = document.createElement("div");
+            itemRow.className = "cart-row"
+            itemRow.innerHTML = `
                                 <img src= "img/products/${itemImg}">
                                 <div>
                                     <h4>${itemTitle}</h4>
@@ -126,22 +126,24 @@ export function displayCart(){
                                     <span>&pound;${itemPrice}</span>
                                 </div>
                                 <div class="cart-quantity">
-                                    <button onclick="addItem('${item.id}')"><i class="fas fa-angle-up"></i></button>
+                                    <button class="add-item"><i class="fas fa-angle-up"></i></button>
                                     <span>${item.qty}</span>
-                                    <button onclick="removeItem('${item.id}')"><i class="fas fa-angle-down"></i></button>
+                                    <button class="remove-item"><i class="fas fa-angle-down"></i></button>
                                 </div>
                                 <div class="cart-trash">
-                                    <button onclick="deleteItem('${item.id}')"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                    <button class="delete-item"><i class="fa fa-trash" aria-hidden="true"></i></button>
                                 </div>
-                            </div>
-
             `
-            cartTable.innerHTML += itemRow;
+
+            itemRow.querySelector(".add-item").addEventListener("click", () => {addItem(item.id)});
+            itemRow.querySelector(".remove-item").addEventListener("click", () => {removeItem(item.id)});
+            itemRow.querySelector(".delete-item").addEventListener("click", () => {deleteItem(item.id)});
+
+            cartTable.appendChild(itemRow);
             cartCounter += item.qty;
             cartTotal += itemPrice * item.qty;
 
         })
-
     }
 
     cartTotalContainer.innerText = "£ " + cartTotal.toFixed(2);
@@ -156,7 +158,6 @@ export function removeItem(id) {
 
     if(cartCheck !== false){
         cartCheck.qty -= 1;
-        console.log(cart)
         if(cartCheck.qty === 0){
             let emptyItem = cart.findIndex(item => item.id == id);
             console.log(emptyItem);

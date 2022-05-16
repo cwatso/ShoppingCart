@@ -3,8 +3,6 @@
 // Import cart and utility codes
 import * as main from '../js/main.js';
 
-main.setupCart();
-
 // Layout Variables
 const productGrid = document.getElementById("product-grid");
 
