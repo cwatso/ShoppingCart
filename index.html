@@ -25,40 +25,46 @@
             <a id="nav-logo" href="#">Fabulous</a>
             <!--/Logo-->
 
-            <ul class="nav-links">
+            <!--Button to open Nav Bar on mobile-->
+            <button id="nav-btn">
+                <i class="fas fa-bars"></i>
+            </button>
 
-                <!--Nav Bar links-->
+            <!--Cart Button and List-->
+
+            <button id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-tag">Cart </span>(<span id="cart-counter">0</span>)</button>
+            <div id="cart-container">
+                <h3>Your Cart</h3>    
+                <div id="cart-table">
+
+                    <!--Cart items go here-->
+
+                </div>
+                <div id="cart-footer">
+                    <div id="cart-total-row">Total:&ensp;<span id="cart-total">£70</span></div>
+                    <div id="cart-footer-btns">
+                        <button id="cart-clear">Clear List</button>
+                        <button id="cart-checkout">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <!--/Cart Button and List-->
+
+            <!--Nav Bar links-->
+
+            <ul id="nav-links">
 
                 <li><a href="#">Home</a></li>
 
                 <li><a href="#">About</a></li>
 
-                <!--Cart Button and List-->
-                <li>
-                    <button id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-counter">0</span>)</button>
-                    <div id="cart-container">
-                        <h3>Your Cart</h3>    
-                        <div id="cart-table">
-    
-                            <!--Cart items go here-->
-    
-                        </div>
-                        <div id="cart-footer">
-                            <div id="cart-total-row">Total:&ensp;<span id="cart-total">£70</span></div>
-                            <div id="cart-footer-btns">
-                                <button id="cart-clear">Clear List</button>
-                                <button id="cart-checkout">Checkout</button>
-                            </div>
-                        </div>
-                    </div>
-                    </li>
-                <!--/Cart Button and List-->
-
-                
-                <!--/Nav Bar links-->
-
             </ul>
+                
+            <!--/Nav Bar links-->
+
         </div>
+          
+
     </nav>
     <!-- Navbar ends here -->
 
@@ -78,7 +84,6 @@
     </div>
     <!-- Product grid ends here -->
 
-    <script src="js/products.js"></script>
     <script type="module" src="js/index.js"></script>
 </body>
 </html>

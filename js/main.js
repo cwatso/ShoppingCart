@@ -1,3 +1,5 @@
+import {products} from '../js/products.js';
+
 // Utility functions
 
 // Gives the location of an item in an array if found using id. Returns false if item id not present.
@@ -24,11 +26,11 @@ export function getItemSize(id){
 
 export function toggleWindow(window) {
 
-    if(window.style.display === "flex"){
-        window.style.display = "none";
+    if(window.classList.contains("show")){
+        window.classList.remove("show");
     }
     else {
-        window.style.display = "flex";
+        window.classList.add("show");
     }
 }
 
@@ -46,7 +48,12 @@ export const cartTotalContainer = document.getElementById("cart-total");
 export const cartClearBtn = document.getElementById("cart-clear");
 
 // Setting up cart storage
-export const cart = [];
+export let cart = [];
+
+if(localStorage.getItem('cart')){
+    let storageCart = localStorage.getItem('cart');
+    cart = JSON.parse(storageCart);
+}
 
 // Functions specifically for Cart
 
@@ -149,6 +156,7 @@ export function displayCart(){
     cartTotalContainer.innerText = "£ " + cartTotal.toFixed(2);
     cartCounterContainer.innerText = cartCounter;
 
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 // Checks if item is in cart. If item is not in cart, throws error. If item is found, decreases item qty by 1. If qty is then 0, removes item from cart.
@@ -207,3 +215,11 @@ export function stockCheck(id, cartItem) {
 }
 
 
+// Navbar Functionality
+
+export const navBtn = document.getElementById("nav-btn");
+export const navLinks = document.getElementById("nav-links");
+
+export function setupNavbar(){
+    navBtn.addEventListener("click", () => {toggleWindow(navLinks)});
+}

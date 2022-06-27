@@ -18,58 +18,65 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Navbar starts here -->
+   <!-- Navbar starts here -->
     <nav>
         <div class="container">
             <!--Logo-->
-            <a id="nav-logo" href="index.html">Fabulous</a>
+            <a id="nav-logo" href="../index.html">Fabulous</a>
             <!--/Logo-->
 
-            <ul class="nav-links">
+            <!--Button to open Nav Bar on mobile-->
+            <button id="nav-btn">
+                <i class="fas fa-bars"></i>
+            </button>
 
-                <!--Nav Bar links-->
+            <!--Cart Button and List-->
 
-                <li><a href="index.html">Home</a></li>
+            <button id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-tag">Cart </span>(<span id="cart-counter">0</span>)</button>
+            <div id="cart-container">
+                <h3>Your Cart</h3>    
+                <div id="cart-table">
+
+                    <!--Cart items go here-->
+
+                </div>
+                <div id="cart-footer">
+                    <div id="cart-total-row">Total:&ensp;<span id="cart-total">£70</span></div>
+                    <div id="cart-footer-btns">
+                        <button id="cart-clear">Clear List</button>
+                        <button id="cart-checkout">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <!--/Cart Button and List-->
+
+            <!--Nav Bar links-->
+
+            <ul id="nav-links">
+
+                <li><a href="../index.html">Home</a></li>
 
                 <li><a href="#">About</a></li>
 
-                <!--Cart Button and List-->
-                <li>
-                <button id="cart-btn"><i class="fas fa-shopping-cart"></i>&ensp;Cart (<span id="cart-counter">0</span>)</button>
-                <div id="cart-container">
-                    <h3>Your Cart</h3>    
-                    <div id="cart-table">
-
-                        <!--Cart items go here-->
-
-                    </div>
-                    <div id="cart-footer">
-                        <div id="cart-total-row">Total:&ensp;<span id="cart-total">£70</span></div>
-                        <div id="cart-footer-btns">
-                            <button id="cart-clear">Clear List</button>
-                            <button id="cart-checkout">Checkout</button>
-                        </div>
-                    </div>
-                </div>
-                </li>
-                <!--/Cart Button and List-->
-
-                
-                <!--/Nav Bar links-->
-
             </ul>
+                
+            <!--/Nav Bar links-->
+
         </div>
+        
+
     </nav>
     <!-- Navbar ends here -->
 
-    <!-- Product box starts here -->
+    <!-- Product box starts here. Product information is generated using javascript -->
 
-    <div id="product-page">
-        <div id="product-thumbnails">
+    <div id="product-page" class="container">   
+        <div id="product-img-viewer">   
+            <img id="product-img" src="" alt="">
+
+            <div id="product-thumbnails">
+            </div>
         </div>
-        
-        <img id="product-img" src="" alt="">
-
         <div id="product-details">
 
             <h2 id="product-title"></h2>
@@ -91,6 +98,5 @@
     </div>
 
     <!-- Product box ends here -->
-    <script src="js/products.js"></script>
     <script type="module" src="js/product.js"></script>
 </body>

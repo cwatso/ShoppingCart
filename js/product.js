@@ -1,4 +1,5 @@
 // Import cart and utility codes
+import {products} from '../js/products.js';
 import * as main from '../js/main.js';
 
 // Get product Id from url
@@ -85,6 +86,7 @@ function setupProductPage() {
     setupThumbnails();
     generateSizes();
     addToCartBtn.addEventListener("click", () => {addToCart();})
+    main.setupNavbar();
     main.setupCart();
 }
 
@@ -96,6 +98,5 @@ function addToCart() {
         main.addItem(id);
     }
 }
-
 
 setupProductPage();

@@ -1,6 +1,6 @@
 // Array containing all the products for sale
 
-const products = [
+export const products = [
     {
         id: 0,
         name: "Orange Borba Dress", 

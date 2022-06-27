@@ -1,3 +1,5 @@
+import {products} from '../js/products.js';
+
 // Code for index page only
 
 // Import cart and utility codes
@@ -36,6 +38,7 @@ function setupProductGrid(){
     })
 }
 
+main.setupNavbar();
 main.setupCart();
 setupProductGrid();
 
